@@ -5,6 +5,7 @@
  * @Modified:
  */
 
+import base.GameServer
 import org.apache.commons.configuration2.builder.fluent.Configurations
 import org.apache.logging.log4j.LogManager
 
@@ -14,7 +15,7 @@ class Main{
             LogManager.getLogger(javaClass.name).info("Read configuration...")
             val configs = Configurations()
             var config =configs.xml("config.xml")
-
+            GameServer(config.getInt("port")).start()
             while (true){ }
         }
     }

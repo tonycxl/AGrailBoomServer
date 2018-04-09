@@ -1,0 +1,17 @@
+message LoginRequest {
+    required string user_id = 1;
+    required string user_password = 2;
+}
+
+message LoginResponse {
+    required int32 state = 1;
+	optional string nickname = 2;
+}
+
+message LogoutRequest{
+
+}
+
+message LogoutResponse{
+    required int32 state = 1;
+}

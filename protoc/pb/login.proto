@@ -1,3 +1,6 @@
+syntax = "proto2";
+option java_outer_classname = "LoginReqRes";
+
 message LoginRequest {
     required string user_id = 1;
     required string user_password = 2;

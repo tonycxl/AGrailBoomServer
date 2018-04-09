@@ -6,5 +6,7 @@ package protocol
  * @Descriptor:
  * @Modified:
  */
+
 class MessageMgr {
+
 }
